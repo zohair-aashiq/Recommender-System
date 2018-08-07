@@ -1,4 +1,4 @@
-# mload
-Exercises for course "Machine Learning and Optimization for Algorithm Design"
-
-Course website: http://aad.informatik.uni-freiburg.de/teaching/ws2015/mload/index.html
+# Recommender Sysrtem
+Recommender system which can learn user preference in a
+source domain and recommend items in a target domain e.g.
+recommend movies by learning a users’ preferences in books
