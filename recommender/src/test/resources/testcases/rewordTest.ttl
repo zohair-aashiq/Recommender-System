@@ -1,0 +1,22 @@
+@prefix graph: <http://example.org/graph#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+#Test set that Roy Ramos implemented in this thesis
+#John
+graph:John graph:livesIn graph:Paris .
+graph:John graph:occupation graph:Student .
+#Maria
+graph:Maria graph:occupation graph:Nurse .
+graph:Maria graph:livesIn graph:Paris .
+#William
+graph:William graph:isBossOf graph:John .
+#Diego
+graph:Diego graph:knows graph:John .
+graph:Diego graph:worksWith graph:Sarah .
+#Sarah
+graph:Sarah graph:worksWith graph:Florian .
+#Florian
+graph:Florian graph:loves graph:Maria .
+#Laura
+graph:Laura graph:livesWith graph:Maria .
+#Some isolated nodes
+graph:Robin graph:fightsNextTo graph:Batman .

@@ -1,0 +1,27 @@
+@prefix graph: <http://example.org/graph#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+#
+#User likes
+graph:User graph:likes graph:A .
+graph:User graph:likes graph:B .
+graph:User graph:likes graph:C .
+graph:User graph:likes graph:D .
+#Targets
+graph:O rdf:type graph:Target .
+graph:P rdf:type graph:Target .
+graph:Q rdf:type graph:Target .
+graph:R rdf:type graph:Target .
+graph:S rdf:type graph:Target .
+graph:T rdf:type graph:Target .
+graph:U rdf:type graph:Target .
+#Connections
+graph:A graph:l graph:X .
+graph:A graph:k graph:Y .
+graph:Y graph:i graph:B .
+graph:B graph:i graph:Z .
+graph:C graph:m graph:W .
+graph:X graph:k graph:O .
+graph:P graph:l graph:Y .
+graph:Z graph:l graph:S .
+graph:Z graph:k graph:T .
+graph:U graph:m graph:W .

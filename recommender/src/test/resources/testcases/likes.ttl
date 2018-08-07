@@ -1,0 +1,14 @@
+@prefix graph: <http://example.org/graph#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+#Alice
+graph:Alice graph:likes graph:Item1 .
+graph:Alice graph:likes graph:Item2 .
+#User1
+graph:User1 graph:likes graph:Item1 .
+graph:User1 graph:likes graph:Item2 .
+graph:User1 graph:likes graph:Item3 .
+#User2
+graph:User2 graph:likes graph:Item3 .
+#User3
+graph:User3 graph:likes graph:Item2 .
+graph:User3 graph:likes graph:Item4 .

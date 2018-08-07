@@ -1,0 +1,16 @@
+@prefix graph: <http://example.org/graph#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+#
+#Venus
+graph:Alexandros graph:creatorOf graph:Venus .
+graph:Venus rdf:type graph:Antiquity .
+graph:Venus rdf:type graph:Marble .
+graph:Venus graph:museum graph:Louvre .
+#Christ
+graph:Antonello graph:creatorOf graph:Christ .
+graph:Christ rdf:type graph:Painting .
+#Rebellious
+graph:Michelangelo graph:creatorOf graph:Rebellious .
+graph:Pope graph:commissioned graph:Rebellious .
+graph:Rebellious rdf:type graph:Marble .
+graph:Rebellious graph:museum graph:Louvre .

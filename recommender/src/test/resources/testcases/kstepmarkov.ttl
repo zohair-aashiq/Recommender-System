@@ -1,0 +1,62 @@
+@prefix graph: <http://example.org/graph#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+#
+#Example copied from https://sites.google.com/site/nirajatweb/home/technical_and_coding_stuff/k-step-markov-centrality
+#
+#ResA
+graph:resA graph:pred graph:resB .
+graph:resA graph:pred graph:resC .
+graph:resA graph:pred graph:resD .
+#ResB
+graph:resB graph:pred graph:resA .
+graph:resB graph:pred graph:resC .
+graph:resB graph:pred graph:resI .
+#ResC
+graph:resC graph:pred graph:resA .
+graph:resC graph:pred graph:resB .
+graph:resC graph:pred graph:resJ .
+#ResD
+graph:resD graph:pred graph:resA .
+graph:resD graph:pred graph:resE .
+graph:resD graph:pred graph:resF .
+#ResE
+graph:resE graph:pred graph:resD .
+graph:resE graph:pred graph:resF .
+graph:resE graph:pred graph:resJ .
+#ResF
+graph:resF graph:pred graph:resD .
+graph:resF graph:pred graph:resE .
+graph:resF graph:pred graph:resG .
+#ResG
+graph:resG graph:pred graph:resF .
+graph:resG graph:pred graph:resH .
+graph:resG graph:pred graph:resI .
+#ResH
+graph:resH graph:pred graph:resG .
+graph:resH graph:pred graph:resI .
+graph:resH graph:pred graph:resJ .
+#ResI
+graph:resI graph:pred graph:resG .
+graph:resI graph:pred graph:resH .
+graph:resI graph:pred graph:resB .
+#ResJ
+graph:resJ graph:pred graph:resE .
+graph:resJ graph:pred graph:resC .
+graph:resJ graph:pred graph:resH .
+#
+#Users
+#User1
+graph:User1 graph:likes graph:resA .
+graph:User1 graph:likes graph:resF .
+#Target Domain
+#In this test set, all items belong to the target domain
+graph:resA rdf:type graph:Source .
+graph:resB rdf:type graph:Target .
+graph:resC rdf:type graph:Target .
+graph:resD rdf:type graph:Target .
+graph:resE rdf:type graph:Target .
+graph:resF rdf:type graph:Source .
+graph:resG rdf:type graph:Target .
+graph:resH rdf:type graph:Target .
+graph:resI rdf:type graph:Target .
+graph:resJ rdf:type graph:Target .

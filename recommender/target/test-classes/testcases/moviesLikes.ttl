@@ -1,0 +1,86 @@
+@prefix movies: <http://example.org/movies#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+#
+#USER USER1
+#
+movies:User1 movies:hasLiked movies:Item1 .
+movies:User1 movies:hasLiked movies:Item2 .
+movies:User1 movies:hasLiked movies:Item3 .
+movies:User1 movies:hasLiked movies:Item5 .
+movies:User1 movies:hasLiked movies:Item9 .
+#
+#USER USER2
+#
+movies:User2 movies:hasLiked movies:Item2 .
+movies:User2 movies:hasLiked movies:Item3 .
+movies:User2 movies:hasLiked movies:Item4 .
+movies:User2 movies:hasLiked movies:Item5 .
+movies:User2 movies:hasLiked movies:Item7 .
+movies:User2 movies:hasLiked movies:Item8 .
+movies:User2 movies:hasLiked movies:Item9 .
+movies:User2 movies:hasLiked movies:Item10 .
+#
+#USER USER3
+#
+movies:User3 movies:hasLiked movies:Item1 .
+movies:User3 movies:hasLiked movies:Item4 .
+movies:User3 movies:hasLiked movies:Item5 .
+movies:User3 movies:hasLiked movies:Item7 .
+movies:User3 movies:hasLiked movies:Item8 .
+movies:User3 movies:hasLiked movies:Item9 .
+movies:User3 movies:hasLiked movies:Item10 .
+#
+#USER USER4
+#
+movies:User4 movies:hasLiked movies:Item2 .
+movies:User4 movies:hasLiked movies:Item3 .
+movies:User4 movies:hasLiked movies:Item4 .
+movies:User4 movies:hasLiked movies:Item5 .
+movies:User4 movies:hasLiked movies:Item6 .
+movies:User4 movies:hasLiked movies:Item8 .
+movies:User4 movies:hasLiked movies:Item9 .
+#
+#USER USER5
+#
+movies:User5 movies:hasLiked movies:Item3 .
+movies:User5 movies:hasLiked movies:Item4 .
+movies:User5 movies:hasLiked movies:Item5 .
+movies:User5 movies:hasLiked movies:Item6 .
+movies:User5 movies:hasLiked movies:Item8 .
+movies:User5 movies:hasLiked movies:Item9 .
+#
+#USER USER6
+#
+movies:User6 movies:hasLiked movies:Item1 .
+movies:User6 movies:hasLiked movies:Item2 .
+movies:User6 movies:hasLiked movies:Item5 .
+movies:User6 movies:hasLiked movies:Item8 .
+movies:User6 movies:hasLiked movies:Item9 .
+movies:User6 movies:hasLiked movies:Item10 .
+#
+#USER USER7
+#
+movies:User7 movies:hasLiked movies:Item5 .
+movies:User7 movies:hasLiked movies:Item6 .
+movies:User7 movies:hasLiked movies:Item8 .
+movies:User7 movies:hasLiked movies:Item9 .
+movies:User7 movies:hasLiked movies:Item10 .
+#
+#USER USER8
+#
+movies:User8 movies:hasLiked movies:Item1 .
+movies:User8 movies:hasLiked movies:Item3 .
+movies:User8 movies:hasLiked movies:Item4 .
+movies:User8 movies:hasLiked movies:Item5 .
+movies:User8 movies:hasLiked movies:Item9 .
+movies:User8 movies:hasLiked movies:Item10 .
+#
+#USER USER9
+#
+movies:User9 movies:hasLiked movies:Item1 .
+movies:User9 movies:hasLiked movies:Item3 .
+movies:User9 movies:hasLiked movies:Item4 .
+movies:User9 movies:hasLiked movies:Item6 .
+movies:User9 movies:hasLiked movies:Item7 .
+movies:User9 movies:hasLiked movies:Item8 .
+movies:User9 movies:hasLiked movies:Item10 . 

@@ -1,0 +1,58 @@
+@prefix movies: <http://example.org/movies#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+#
+#MOVIES
+#
+#MOVIE_1
+movies:Man_of_steel movies:hasGenre "action" .
+movies:Man_of_steel movies:hasGenre "adventure" .
+movies:Man_of_steel movies:hasPublicRating "6.4" .
+#MOVIE_2
+movies:Elysium movies:hasGenre "drama" .
+movies:Elysium movies:hasGenre "thriller" .
+movies:Elysium movies:hasPublicRating "8.0" .
+#MOVIE_3
+movies:Gravity movies:hasGenre "drama" .
+movies:Gravity movies:hasGenre "sci-fi" .
+movies:Gravity movies:hasGenre "thriller" .
+movies:Gravity movies:hasPublicRating "8.4" .
+#MOVIE_4
+movies:Django_Unchained movies:hasGenre "adventure" .
+movies:Django_Unchained movies:hasGenre "drama" .
+movies:Django_Unchained movies:hasPublicRating "8.5" .
+#
+#USER BOB
+#
+movies:Bob movies:hasProfession "student" .
+movies:Bob movies:hasGender "male" .
+movies:Bob movies:hasAge "30" .
+movies:Bob movies:hasRated movies:Rating1 .
+movies:Bob movies:hasRated movies:Rating2 .
+#BOB -> MOVIE_1
+movies:Rating1 movies:ratedMovie movies:Gravity .
+movies:Rating1 movies:hasRating "4.0" .
+#BOB -> MOVIE_2
+movies:Rating2 movies:ratedMovie movies:Django_Unchained .
+movies:Rating2 movies:hasRating "9.0" .
+#
+#USER ALICE
+#
+movies:Alice movies:hasProfession "student" .
+movies:Alice movies:hasGender "female" .
+movies:Alice movies:hasAge "27" .
+movies:Alice movies:hasRated movies:Rating3 .
+movies:Alice movies:hasRated movies:Rating4 .
+movies:Alice movies:hasRated movies:Rating5 .
+movies:Alice movies:hasRated movies:Rating6 .
+#ALICE -> MOVIE_1
+movies:Rating3 movies:ratedMovie movies:Elysium .
+movies:Rating3 movies:hasRating "3.0" .
+#ALICE -> MOVIE_2
+movies:Rating4 movies:ratedMovie movies:Gravity .
+movies:Rating4 movies:hasRating "5.0" .
+#ALICE -> MOVIE_3
+movies:Rating5 movies:ratedMovie movies:Django_Unchained .
+movies:Rating5 movies:hasRating "9.5" .
+#ALICE -> MOVIE_4
+movies:Rating6 movies:ratedMovie movies:Man_of_steel .
+movies:Rating6 movies:hasRating "8" .

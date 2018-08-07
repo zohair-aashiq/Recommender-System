@@ -1,0 +1,108 @@
+@prefix movies: <http://example.org/movies#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+#
+#Example copied from book Recommender System, An introduction, Dietmar Jannach, Markus Zanker et al.
+#
+#USER USER1
+#
+movies:User1 movies:hasRated movies:Rating6 .
+movies:User1 movies:hasRated movies:Rating7 .
+movies:User1 movies:hasRated movies:Rating8 .
+movies:User1 movies:hasRated movies:Rating9 .
+movies:User1 movies:hasRated movies:Rating10 .
+#USER1 -> MOVIE_1
+movies:Rating6 movies:ratedMovie movies:Item1 .
+movies:Rating6 movies:hasRating "3.0" .
+#USER1 -> MOVIE_2
+movies:Rating7 movies:ratedMovie movies:Item2 .
+movies:Rating7 movies:hasRating "1.0" .
+#USER1 -> MOVIE_3
+movies:Rating8 movies:ratedMovie movies:Item3 .
+movies:Rating8 movies:hasRating "2.0" .
+#USER1 -> MOVIE_4
+movies:Rating9 movies:ratedMovie movies:Item4 .
+movies:Rating9 movies:hasRating "3.0" .
+#USER1 -> MOVIE_5
+movies:Rating10 movies:ratedMovie movies:Item5 .
+movies:Rating10 movies:hasRating "3.0" .
+#USER1 -> MOVIE_6
+movies:Rating25 movies:ratedMovie movies:Item6 .
+movies:Rating25 movies:hasRating "4.0" .
+#
+#USER USER2
+#
+movies:User2 movies:hasRated movies:Rating11 .
+movies:User2 movies:hasRated movies:Rating12 .
+movies:User2 movies:hasRated movies:Rating13 .
+movies:User2 movies:hasRated movies:Rating14 .
+movies:User2 movies:hasRated movies:Rating15 .
+#USER2 -> MOVIE_1
+movies:Rating11 movies:ratedMovie movies:Item1 .
+movies:Rating11 movies:hasRating "4.0" .
+#USER2 -> MOVIE_2
+movies:Rating12 movies:ratedMovie movies:Item2 .
+movies:Rating12 movies:hasRating "3.0" .
+#USER2 -> MOVIE_3
+movies:Rating13 movies:ratedMovie movies:Item3 .
+movies:Rating13 movies:hasRating "4.0" .
+#USER2 -> MOVIE_4
+movies:Rating14 movies:ratedMovie movies:Item4 .
+movies:Rating14 movies:hasRating "3.0" .
+#USER2 -> MOVIE_5
+movies:Rating15 movies:ratedMovie movies:Item5 .
+movies:Rating15 movies:hasRating "5.0" .
+#USER2 -> MOVIE_6
+movies:Rating26 movies:ratedMovie movies:Item6 .
+movies:Rating26 movies:hasRating "3.0" .
+#
+#USER USER3
+#
+movies:User3 movies:hasRated movies:Rating16 .
+movies:User3 movies:hasRated movies:Rating17 .
+movies:User3 movies:hasRated movies:Rating18 .
+movies:User3 movies:hasRated movies:Rating19 .
+movies:User3 movies:hasRated movies:Rating20 .
+#USER3 -> MOVIE_1
+movies:Rating16 movies:ratedMovie movies:Item1 .
+movies:Rating16 movies:hasRating "3.0" .
+#USER3 -> MOVIE_2
+movies:Rating17 movies:ratedMovie movies:Item2 .
+movies:Rating17 movies:hasRating "3.0" .
+#USER3 -> MOVIE_3
+movies:Rating18 movies:ratedMovie movies:Item3 .
+movies:Rating18 movies:hasRating "1.0" .
+#USER3 -> MOVIE_4
+movies:Rating19 movies:ratedMovie movies:Item4 .
+movies:Rating19 movies:hasRating "5.0" .
+#USER3 -> MOVIE_5
+movies:Rating20 movies:ratedMovie movies:Item5 .
+movies:Rating20 movies:hasRating "4.0" .
+#USER3 -> MOVIE_6
+movies:Rating27 movies:ratedMovie movies:Item6 .
+movies:Rating27 movies:hasRating "2.0" .
+#
+#USER USER4
+#
+movies:User4 movies:hasRated movies:Rating21 .
+movies:User4 movies:hasRated movies:Rating22 .
+movies:User4 movies:hasRated movies:Rating23 .
+movies:User4 movies:hasRated movies:Rating24 .
+movies:User4 movies:hasRated movies:Rating25 .
+#USER4 -> MOVIE_1
+movies:Rating21 movies:ratedMovie movies:Item1 .
+movies:Rating21 movies:hasRating "1.0" .
+#USER4 -> MOVIE_2
+movies:Rating22 movies:ratedMovie movies:Item2 .
+movies:Rating22 movies:hasRating "5.0" .
+#USER4 -> MOVIE_3
+movies:Rating23 movies:ratedMovie movies:Item3 .
+movies:Rating23 movies:hasRating "5.0" .
+#USER4 -> MOVIE_4
+movies:Rating24 movies:ratedMovie movies:Item4 .
+movies:Rating24 movies:hasRating "2.0" .
+#USER4 -> MOVIE_5
+movies:Rating25 movies:ratedMovie movies:Item5 .
+movies:Rating25 movies:hasRating "1.0" .
+#USER4 -> MOVIE_6
+movies:Rating28 movies:ratedMovie movies:Item6 .
+movies:Rating28 movies:hasRating "1.0" .
