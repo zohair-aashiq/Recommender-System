@@ -1,5 +1,5 @@
 /* 
- * Victor Anthony Arrascue Ayala
+ * Zohair Aashiq
  * Albert-Ludwigs-Universiaet Freiburg
  * Institut fuer Informatik
  */
